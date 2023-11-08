@@ -1,0 +1,35 @@
+{
+  "name": "infrastructure",
+  "version": "1.0.0",
+  "bin": {
+    "infrastructure": "bin/infrastructure.js"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "lint": "npx eslint . --ext .ts",
+    "package": "npm run build && npm run lint && npx cdk synth",
+    "bootstrap": "npx cdk bootstrap",
+    "deploy-shared-infrastructure": "npm run package && npx cdk deploy Shared-Infrastructure",
+    "deploy": "npm run package && npx cdk deploy --all"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "~4.0.5",
+    "@types/node": "~20.2.0",
+    "@typescript-eslint/eslint-plugin": "~5.59.8",
+    "@typescript-eslint/parser": "~5.59.8",
+    "aws-cdk": "2.104.0",
+    "eslint": "~8.42.0",
+    "eslint-plugin-import": "~2.27.0",
+    "eslint-plugin-node": "~11.1.0",
+    "eslint-plugin-promise": "~6.1.0",
+    "ts-node": "~10.9.0",
+    "typescript": "~5.0.4"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.104.0",
+    "cdk-iam-floyd": "0.507.0",
+    "constructs": "10.2.39",
+    "js-yaml": "~4.1.0",
+    "source-map-support": "~0.5.0"
+  }
+}
