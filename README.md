@@ -16,9 +16,7 @@ Even that *Trurl* as a word may look like a set of arbitrary letters put togethe
 
 #### What is *LLaMA 2*?
 
-[LLaMA 2](https://ai.meta.com/resources/models-and-libraries/llama/) is a family of *Large Language Models (LLMs)* developed by Meta. This collection of pretrained and fine-tuned models is ranging in scale from 7 billion to 70 billion parameters. As the name suggests it is a 2nd iteration, and those models are trained on 2 trillion tokens and have double the context length of [LLaMA 1](https://ai.meta.com/blog/large-language-model-llama-meta-ai).
-
-Additionally, remember to review and refer to the [*Meta’s Responsible Use Guide*](https://ai.meta.com/llama/responsible-use-guide) for the exact details and specific usage restrictions.
+[LLaMA 2](https://ai.meta.com/resources/models-and-libraries/llama/) is a family of *Large Language Models (LLMs)* developed by [Meta](https://ai.meta.com). This collection of pretrained and fine-tuned models is ranging in scale from 7 billion to 70 billion parameters. As the name suggests it is a 2nd iteration, and those models are trained on 2 trillion tokens and have double the context length of [LLaMA 1](https://ai.meta.com/blog/large-language-model-llama-meta-ai).
 
 ## Prerequisites and Setup
 
