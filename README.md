@@ -1,6 +1,6 @@
 ## Deploying *TRURL 2* on *Amazon SageMaker*
 
-This is a repository that contains a demo for deploying **[TRURL 2](https://huggingface.co/Voicelab/trurl-2-7b)** on [Amazon SageMaker](https://aws.amazon.com/sagemaker). It is a *Large Language Model (LLM)*, which is a fine-tuned version of [LLaMA 2](https://ai.meta.com/llama/) with support for *Polish* :poland: language that was prepared by [VoiceLab](https://voicelab.ai) and published on their company's [Hugging Face](https://huggingface.co/Voicelab) profile.
+This is a repository that contains a demo for deploying **[TRURL 2](https://huggingface.co/Voicelab/trurl-2-7b)** on [Amazon SageMaker](https://aws.amazon.com/sagemaker). *TRURL 2* is a *Large Language Model (LLM)*, which is a fine-tuned version of [LLaMA 2](https://ai.meta.com/llama/) with support for *Polish* :poland: language that was prepared by [VoiceLab](https://voicelab.ai) and published at their company profile on [Hugging Face](https://huggingface.co/Voicelab).
 
 ### What is *TRURL 2*?
 
@@ -155,7 +155,7 @@ $ ./clean-up-after-sagemaker-studio.sh "${EFS_ID}" "${DOMAIN_ID}"
 $ (cd infrastructure && cdk destroy --all)
 ```
 
-Last, but not least - here is a quick summary in terms of *how much does that cost*. The biggest cost factor are obviously machines used for *Amazon SageMaker Endpoint* (1x `ml.g5.2xlarge`) and *kernel* that was used by *Amazon SageMaker Studio Notebook* (1x `ml.t3.medium`). Assuming, that we have set up all infrastructure in `eu-west-1`, the total cost of using for 8 hours cloud resources from this code sample will be lower than $15 ([here you can find detailed calculation](https://calculator.aws/#/estimate?id=789a6cd85ffac96e8b4321cca2a9a4d53cdb5210)).
+Last, but not least - here is a quick summary in terms of *how much does that cost*. The biggest cost factor are obviously machines that we created for and inside *Jupyter Notebook*. Those are: compute for *Amazon SageMaker Endpoint* (1x `ml.g5.2xlarge`) and compute for *kernel* that was used by *Amazon SageMaker Studio Notebook* (1x `ml.t3.medium`). Assuming, that we have set up all infrastructure in `eu-west-1`, the total cost of using for 8 hours cloud resources from this code sample will be lower than $15 ([here you can find a detailed calculation](https://calculator.aws/#/estimate?id=789a6cd85ffac96e8b4321cca2a9a4d53cdb5210)). Everything else that you created with the *infrastructure as code* (via *AWS CDK*) has much lower cost, especially within the discussed time constraints.
 
 ## Contact
 
