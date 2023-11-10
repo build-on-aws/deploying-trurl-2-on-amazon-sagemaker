@@ -1,10 +1,12 @@
 ## Deploying *TRURL 2* on *Amazon SageMaker*
 
-This is a repository that contains a demo for deploying **[TRURL 2](https://huggingface.co/Voicelab/trurl-2-7b)** on [Amazon SageMaker](https://aws.amazon.com/sagemaker). *TRURL 2* is a *Large Language Model (LLM)*, which is a fine-tuned version of [LLaMA 2](https://ai.meta.com/llama/) with support for *Polish* :poland: language that was prepared by [VoiceLab](https://voicelab.ai) and published at their company profile on [Hugging Face](https://huggingface.co/Voicelab).
+This is a repository that contains a demo for deploying [TRURL 2](https://huggingface.co/Voicelab/trurl-2-7b) on [Amazon SageMaker](https://aws.amazon.com/sagemaker), used as a supporting resource [for the article published](https://community.aws/posts/deploying-trurl-2-on-amazon-sagemaker) on the [community.aws](https://community.aws) website.
+
+**TRURL 2** is a family of *Large Language Models (LLMs)*, which are a fine-tuned version of [LLaMA 2](https://ai.meta.com/llama/) with support for *Polish* :poland: language. It was created by [VoiceLab](https://voicelab.ai) and published on [Hugging Face](https://huggingface.co/Voicelab) portal.
 
 ### What is *TRURL 2*?
 
-For the majority of people, *TRURL 2* is the least familiar term in the title above - so allow me to start here. [TRURL 2](https://huggingface.co/Voicelab#models) is a fine-tuned version of [LLaMA 2](https://ai.meta.com/llama/#inside-the-model). According to the authors it is trained on over 1.7B tokens (970k conversational Polish and English samples) with a large context of 4096 tokens. To be precise, *TRURL 2* is not a single model, but a collection of fine-tuned generative text models with 7 billion and 13 billion parameters, optimized for dialogue use cases. You can read more about it on their official [blog post](https://voicelab.ai/trurl-is-here) after model's release.
+For the majority of people, *TRURL 2* is the least familiar term in the title above - so allow me to start here. As stated above, [TRURL 2](https://huggingface.co/Voicelab#models) is a fine-tuned version of [LLaMA 2](https://ai.meta.com/llama/#inside-the-model). According to the authors, it is trained on over 1.7B tokens (970k conversational Polish and English samples) with a large context of 4096 tokens. To be precise, *TRURL 2* is not a single model, but a collection of fine-tuned generative text models with 7 billion and 13 billion parameters, optimized for dialogue use cases. You can read more about it on their official [blog post](https://voicelab.ai/trurl-is-here) after model's release.
 
 #### Who created *TRURL* family of models?
 
@@ -12,9 +14,9 @@ It was created by a Polish :poland: company called [Voicelab.AI](https://voicela
 
 #### What this word really means? Who is *Trurl*? :robot:
 
-Even that *Trurl* as a word may look like a set of arbitrary letters put together, it actually makes sense. *Trurl* is one of the characters known from [Stanislaw Lem’s](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Lem) science-fiction novel, ["The Cyberiad"](https://en.wikipedia.org/wiki/The_Cyberiad). According to the author of the book, he is a robotic engineer, *a constructor*, with almost godlike abilities. In one of the stories, he creates a machine called "Elektrybałt", which by description resembles today’s [GPT](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer) solutions. You can clearly see, that this particular name is definitely not a coincidence.
+Even that *Trurl* as a word may look like a set of arbitrary letters put together, it actually makes sense. *Trurl* is one of the characters known from [Stanislaw Lem’s](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Lem) science-fiction novel, ["The Cyberiad"](https://en.wikipedia.org/wiki/The_Cyberiad). According to the author of the book, *Trurl* is a robotic engineer :robot:, *a constructor*, with almost godlike abilities. In one of the stories, he creates a machine called "*Elektrybałt*", which by description resembles today’s [GPT](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer) solutions. You can clearly see, that this particular name is definitely not a coincidence.
 
-#### What is *LLaMA 2*?
+#### What is *LLaMA 2*? :llama:
 
 [LLaMA 2](https://ai.meta.com/resources/models-and-libraries/llama/) is a family of *Large Language Models (LLMs)* developed by [Meta](https://ai.meta.com). This collection of pretrained and fine-tuned models is ranging in scale from 7 billion to 70 billion parameters. As the name suggests it is a 2nd iteration, and those models are trained on 2 trillion tokens and have double the context length of [LLaMA 1](https://ai.meta.com/blog/large-language-model-llama-meta-ai).
 
