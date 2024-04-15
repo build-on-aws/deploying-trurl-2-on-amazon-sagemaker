@@ -17,6 +17,8 @@ export class InfrastructureSharedStack extends Stack {
   constructor (scope: Construct, id: string, props: StackProps) {
     super(scope, id, props);
 
+    const { account, region } = Stack.of(this);
+
     // AWS CodeCommit Git repository shared across AWS Cloud9 instances.
 
     this.repository = new Repository(this, "CodeRepository", {
@@ -35,7 +37,7 @@ export class InfrastructureSharedStack extends Stack {
     // Shared S3 Bucket for common data.
 
     this.dataBucket = new Bucket(this, "DataBucket", {
-      bucketName: `deploying-trurl-2-on-amazon-sagemaker-common-data-${Stack.of(this).region}`,
+      bucketName: `deploying-trurl-2-on-sagemaker-data-${account}-${region}`,
       blockPublicAccess: BlockPublicAccess.BLOCK_ALL
     });
 

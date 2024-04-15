@@ -45,7 +45,7 @@ $ export JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=true
 $ make
 $ source ./.env/bin/activate
 
-$ cd ../infrastructure
+$ cd ./infrastructure
 $ npm install
 
 # Or `export AWS_PROFILE=<YOUR_PROFILE_FROM_AWS_CLI>`
